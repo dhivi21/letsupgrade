@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.assert()
+        console.log("This is the outer level");
+console.group("First group");
+console.log("In the first group");
+console.group("Second group");
+console.log("In the second group");
+console.warn("Still in the second group");
+console.groupEnd();
+console.log("Back to the first group");
+console.groupEnd();
+console.debug("Back to the outer level");
+console.error('This is a simple error');  
+console.time('abc'); 
+ let fun =  function(){ 
+     console.log('fun is running'); 
+ } 
+ let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+ } 
+ fun(); // calling fun(); 
+ fun2(); // calling fun2(); 
+console.timeEnd('abc'); 
+console.table({'a':1, 'b':2});
+for(let i=0;i<5;i++){ 
+    console.count(i); 
+} 
+console.clear(); 
+  </script>
+</body>
+</html>
